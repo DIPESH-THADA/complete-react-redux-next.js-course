@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "topic": "React Basics",
+    "profilePicture": "https://randomuser.me/api/portraits/men/1.jpg",
+    "role": "Senior Frontend Developer",
+    "speakingTime": "10:00 AM – 10:45 AM",
+    "sessionRoom": "Hall A",
+    "experience": "8 years",
+    "qualifications": "B.Sc. Computer Science, MIT",
+    "skills": [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Webpack"
+    ],
+    "bio": "John has been building web applications for over 8 years and is passionate about making React accessible to everyone. He mentors junior devs at his company and runs a popular React newsletter."
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "topic": "State Management in React",
+    "profilePicture": "https://randomuser.me/api/portraits/men/2.jpg",
+    "role": "Full Stack Engineer",
+    "speakingTime": "1:00 PM – 1:45 PM",
+    "sessionRoom": "Hall C",
+    "experience": "6 years",
+    "qualifications": "B.Eng. Software Engineering, UCLA",
+    "skills": [
+      "Redux",
+      "Zustand",
+      "MobX",
+      "React Query"
+    ],
+    "bio": "Bob is a full-stack engineer with a deep passion for state management solutions and developer tooling. He maintains two popular npm packages."
+  },
+  {
+    "id": 4,
+    "name": "Alice Williams",
+    "topic": "React Performance Optimization",
+    "profilePicture": "https://randomuser.me/api/portraits/women/2.jpg",
+    "role": "Performance Engineer",
+    "speakingTime": "2:00 PM – 2:45 PM",
+    "sessionRoom": "Hall A",
+    "experience": "12 years",
+    "qualifications": "Ph.D. Computer Science, Harvard",
+    "skills": [
+      "React Profiler",
+      "Memoization",
+      "Lazy Loading",
+      "Web Vitals"
+    ],
+    "bio": "Alice has dedicated her career to making web applications blazing fast. She has spoken at 20+ international conferences and authored a book on frontend performance."
+  },
+  {
+    "id": 5,
+    "name": "Charlie Brown",
+    "topic": "Testing React Applications",
+    "profilePicture": "https://randomuser.me/api/portraits/men/3.jpg",
+    "role": "QA Engineering Lead",
+    "speakingTime": "3:00 PM – 3:45 PM",
+    "sessionRoom": "Hall B",
+    "experience": "7 years",
+    "qualifications": "B.Sc. Information Systems, NYU",
+    "skills": [
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Vitest"
+    ],
+    "bio": "Charlie believes every bug is a story waiting to be told. He leads a team of QA engineers at a Fortune 500 company and evangelizes test-driven development."
+  },
+  {
+    "id": 6,
+    "name": "Emily Davis",
+    "topic": "React and TypeScript",
+    "profilePicture": "https://randomuser.me/api/portraits/women/3.jpg",
+    "role": "TypeScript Evangelist",
+    "speakingTime": "4:00 PM – 4:50 PM",
+    "sessionRoom": "Hall C",
+    "experience": "9 years",
+    "qualifications": "M.Sc. Computer Science, UC Berkeley",
+    "skills": [
+      "TypeScript",
+      "React",
+      "GraphQL",
+      "tRPC"
+    ],
+    "bio": "Emily is a passionate advocate for type safety in JavaScript ecosystems. She has authored several TypeScript tutorials and maintains a blog read by 50k developers monthly."
+  },
+  {
+    "id": 7,
+    "name": "David Wilson",
+    "topic": "React Hooks Deep Dive",
+    "profilePicture": "https://randomuser.me/api/portraits/men/4.jpg",
+    "role": "React Core Contributor",
+    "speakingTime": "5:00 PM – 5:45 PM",
+    "sessionRoom": "Hall A",
+    "experience": "11 years",
+    "qualifications": "B.Sc. Computer Science, Princeton",
+    "skills": [
+      "React Hooks",
+      "Custom Hooks",
+      "useContext",
+      "useReducer"
+    ],
+    "bio": "David is one of the original contributors to React Hooks. He has been working closely with the React core team for years and regularly gives workshops at major conferences."
+  },
+  {
+    "name": "Dipesh Thada",
+    "role": "Senior FullStack Developer",
+    "topic": "Review fullstack developing ",
+    "bio": "He is a very intelligent and experienced full-stack web developer. He has more than 5 years of experience in the respective field",
+    "speakingTime": "10:00am - 12:00pm",
+    "sessionRoom": "Hall A",
+    "experience": "5 Years",
+    "qualifications": "Mater in computer science",
+    "skills": [
+      "React/Typescript/Nextjs"
+    ],
+    "profilePicture": "https://scontent.farw1-1.fna.fbcdn.net/v/t39.30808-1/612147737_4177572962500878_7546749224729410291_n.jpg?stp=cp6_dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=UNLSdC-C_ecQ7kNvwGVA7rv&_nc_oc=AdoE4-rhdw5mvM7sSTlcr-q8e0KnJFMyOEaB8OPPU2bNOJNqLkYNAeTYWNEZRLAncFA&_nc_zt=24&_nc_ht=scontent.farw1-1.fna&_nc_gid=KMohemOGBpqP4v5o2glNpQ&_nc_ss=7b2a8&oh=00_Af8RotzSJc1u8CZujvaVAxFFCyAwpuuF9paouICu9arxkA&oe=6A2230EB",
+    "id": 1780244627423
+  },
+  {
+    "name": "Jenny Washington ",
+    "role": "Senior React Developer",
+    "topic": "Review fullstack developing ",
+    "bio": "She is very intelligent in her field",
+    "speakingTime": "10:00am - 12:00pm",
+    "sessionRoom": "Hall B",
+    "experience": "5 Years",
+    "qualifications": "Mater in computer science",
+    "skills": [
+      "React/Typescript/Nextjs"
+    ],
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiHhQJmspjxZ8WysRX1i_yyuCUJ5FLdj80sPXkY7BipJcOwGMoPI18Ccxzrjtk4hckNE7aRxYWFR4SKDRDSCSut10JmvrVpy3ecVeFcN-MGA&s=10",
+    "id": 1780246790004
+  }
+]
