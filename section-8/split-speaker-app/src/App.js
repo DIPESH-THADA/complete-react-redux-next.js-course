@@ -7,6 +7,7 @@ import { SpeakerCard } from "./SpeakerCard";
 import { AddSpeakerForm } from "./AddSpeakerForm";
 import { About } from "./About";
 import { Contact } from "./Contact";
+import { Footer } from "./Footer";
 
 export default function App() {
   const [speakers, setSpeakers] = useState([]);
@@ -15,12 +16,18 @@ export default function App() {
   const [backendOnline, setBackendOnline] = useState(true);
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("theme") === "dark";
-    document.documentElement.setAttribute("data-theme", saved ? "dark" : "light");
+    document.documentElement.setAttribute(
+      "data-theme",
+      saved ? "dark" : "light",
+    );
     return saved;
   });
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
+    document.documentElement.setAttribute(
+      "data-theme",
+      darkMode ? "dark" : "light",
+    );
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
@@ -76,7 +83,9 @@ export default function App() {
       {!backendOnline && (
         <div className="offline-banner">
           Backend not running — changes won't be saved. Start it with:{" "}
-          <code>cd backend &amp;&amp; npm install &amp;&amp; node server.js</code>
+          <code>
+            cd backend &amp;&amp; npm install &amp;&amp; node server.js
+          </code>
         </div>
       )}
       <Header
@@ -85,7 +94,11 @@ export default function App() {
         darkMode={darkMode}
         onToggleDark={() => setDarkMode((d) => !d)}
       />
-      <Main speakers={speakers} searchQuery={searchQuery} onDelete={handleDeleteSpeaker} />
+      <Main
+        speakers={speakers}
+        searchQuery={searchQuery}
+        onDelete={handleDeleteSpeaker}
+      />
       <AddSpeakerForm onAdd={handleAddSpeaker} />
       <About />
       <Contact />
@@ -96,10 +109,11 @@ export default function App() {
 
 function Main({ speakers, searchQuery, onDelete }) {
   const filtered = speakers.filter((s) =>
-    s.name.toLowerCase().includes(searchQuery.toLowerCase())
+    s.name.toLowerCase().includes(searchQuery.toLowerCase()),
   );
   const [selectedSpeaker, setSelectedSpeaker] = useState(speakers[0]);
-  const effectiveSelected = filtered.find((s) => s.id === selectedSpeaker?.id) ?? filtered[0];
+  const effectiveSelected =
+    filtered.find((s) => s.id === selectedSpeaker?.id) ?? filtered[0];
 
   return (
     <main id="home">
@@ -140,45 +154,5 @@ function SpeakersList({ speakers, onSelect, selectedId, onDelete }) {
         />
       ))}
     </div>
-  );
-}
-
-function Footer() {
-  const currentYear = new Date().getFullYear();
-  return (
-    <footer className="footer">
-      <div className="footer-top">
-        <div className="footer-brand">
-          <span className="footer-logo">🎤</span>
-          <h3>Split Speaker App</h3>
-          <p>Connecting world-class speakers with audiences who matter. Discover, manage, and celebrate great minds.</p>
-        </div>
-
-        <div className="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-socials">
-          <h4>Connect</h4>
-          <div className="social-links">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">🐦 Twitter</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">💼 LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">💻 GitHub</a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">▶️ YouTube</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="footer-bottom">
-        <p>&copy; {currentYear} Split Speaker App. All rights reserved.</p>
-        <p className="footer-tagline">Made with ❤️ for great speakers</p>
-      </div>
-    </footer>
   );
 }
